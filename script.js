@@ -60,7 +60,7 @@ function ValidarCPF(Objcpf) {
         var digitoGerado = (soma1 * 10) + soma2;
         if (digitoGerado != digitoDigitado) alert('CPF Invalido!');
     } //valida numero inteiro com mascara
-function mascaraInteiro() {
+function mascaraInteiro(event) {
         if (event.keyCode < 48 || event.keyCode > 57) {
             event.returnValue = false;
             return false;
